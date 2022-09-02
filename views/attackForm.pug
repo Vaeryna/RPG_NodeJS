@@ -1,35 +1,32 @@
 h3 Choisissez votre action
 
-form.attacks#action
+form.attacks#action(method='post' action='fight')
     .form-check
-        input#physicalAttack.form-check-input(type='radio' name='action' checked)
         label.form-check-label(for='physicalAttack')
+            input#physicalAttack.form-check-input(type='radio' name='action' checked)
             | Attaque physique
     .form-check
-        input#magicAttack.form-check-input(type='radio' name='action')
         label.form-check-label(for='magicAttack')
+            input#magicAttack.form-check-input(type='radio' name='action')
             | Attaque magique
     .form-check
-        input#armorBoost.form-check-input(type='radio' name='action' )
         label.form-check-label(for='armorBoost')
+            input#armorBoost.form-check-input(type='radio' name='action' )
             | Boost d'armure
     .form-check
-        input#strengthBoost.form-check-input(type='radio' name='action' )
         label.form-check-label(for='strengthBoost')
+            input#strengthBoost.form-check-input(type='radio' name='action' )
             | Boost de force
     .form-check
-        input#magicBoost.form-check-input(type='radio' name='action' )
         label.form-check-label(for='magicBoost')
+            input#magicBoost.form-check-input(type='radio' name='action' )
             | Boost de magie
     .form-check
-        input#speedBoost.form-check-input(type='radio' name='action')
         label.form-check-label(for='speedBoost')
+            input#speedBoost.form-check-input(type='radio' name='action')
             | Boost de vitesse
     .form-check
-        input#heal.form-check-input(type='radio' name='action')
         label.form-check-label(for='heal')
+            input#heal.form-check-input(type='radio' name='action')
             | Soin
-
-
-
-button.btn.btn-primary(onclick="console.log(form.entries)") Fin du tour
+        input.btn.btn-primary(type="submit" value="submit")
